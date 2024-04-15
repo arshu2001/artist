@@ -1,5 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:artist/artist/acheivement.dart';
+import 'package:artist/artist/events.dart';
+import 'package:artist/artist/settings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -173,26 +176,36 @@ class _ProfileState extends State<Profile> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 590,left: 40),
-                  child: Container(
-                    height: 30,
-                    width: 124,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color.fromRGBO(227, 154, 133, 1)
+                  child: InkWell(
+                    onTap: () {
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => Events(),));
+                    },
+                    child: Container(
+                      height: 30,
+                      width: 124,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color.fromRGBO(227, 154, 133, 1)
+                      ),
+                      child: Center(child: Text('Events')),
                     ),
-                    child: Center(child: Text('Events')),
                   ),
                 ),
                  Padding(
                   padding: const EdgeInsets.only(top: 590,left: 230),
-                  child: Container(
-                    height: 30,
-                    width: 124,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color.fromRGBO(227, 154, 133, 1)
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Acheivement(),));
+                    },
+                    child: Container(
+                      height: 30,
+                      width: 124,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color.fromRGBO(227, 154, 133, 1)
+                      ),
+                      child: Center(child: Text('Acheivement')),
                     ),
-                    child: Center(child: Text('Acheivement')),
                   ),
                 ),
                 Padding(
@@ -223,6 +236,12 @@ class _ProfileState extends State<Profile> {
                     ),
                   ),
                 ),
+                Align(
+                  alignment: Alignment.topRight,
+                  child: IconButton(onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Settings(),));
+                  }, icon: Icon(Icons.settings,size: 40,)),
+                )
               ],
             ),
           ),
