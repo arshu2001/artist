@@ -2,6 +2,7 @@
 
 import 'package:artist/artist/acheivement.dart';
 import 'package:artist/artist/events.dart';
+import 'package:artist/artist/schedule.dart';
 import 'package:artist/artist/settings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -210,29 +211,34 @@ class _ProfileState extends State<Profile> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 640),
-                  child: Container(
-                    height: 87,
-                    width: 390,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                               Color(0xFF9B3F3F), // Start color (#9B3F3F)
-                               Color(0xFF000000), // End color (#000000)
-                              ],
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Schedule(),));
+                    },
+                    child: Container(
+                      height: 87,
+                      width: 390,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [
+                                 Color(0xFF9B3F3F), // Start color (#9B3F3F)
+                                 Color(0xFF000000), // End color (#000000)
+                                ],
+                        ),
                       ),
-                    ),
-                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Schedules',style: TextStyle(
-                          color: Color.fromRGBO(250, 233, 235, 1),
-                          fontSize: 44,
-                          fontWeight: FontWeight.w500,
-                          fontFamily: 'ubuntu'
-                        ),),
-                        Image.asset('images/caltime.png'),
-                      ],
+                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('Schedules',style: TextStyle(
+                            color: Color.fromRGBO(250, 233, 235, 1),
+                            fontSize: 44,
+                            fontWeight: FontWeight.w500,
+                            fontFamily: 'ubuntu'
+                          ),),
+                          Image.asset('images/caltime.png'),
+                        ],
+                      ),
                     ),
                   ),
                 ),

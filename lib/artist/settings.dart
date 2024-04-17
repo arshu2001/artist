@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:artist/login.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatefulWidget {
@@ -11,6 +12,15 @@ class Settings extends StatefulWidget {
 }
 
 class _SettingsState extends State<Settings> {
+  List Settingss =[
+    {'icon':Icons.edit,'text1':'Edit Profile','text2':'Changes Required'},
+    {'icon':Icons.password,'text1':'Password','text2':'Change Password'},
+    {'icon':Icons.help,'text1':'Help','text2':'Report a Problem'},
+    {'icon':Icons.person,'text1':'About Us','text2':'Report a Problem'},
+    {'icon':Icons.notifications,'text1':'Notification','text2':'App Notification'},
+    
+
+  ];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -61,8 +71,22 @@ class _SettingsState extends State<Settings> {
                           width: 350,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Colors.amber
+                            color: Colors.white
                           ),
+                          child: ListView.separated(itemBuilder: (context, index) {
+                            return ListTile(
+                              
+                              leading: Icon(Settingss[index]['icon']),
+                              title: Text(Settingss[index]['text1'],style: TextStyle(
+                                fontFamily: 'ubuntu',
+                                fontSize: 18
+                              ),),
+                              subtitle: Text(Settingss[index]['text2']),
+                              trailing: Icon(Icons.arrow_forward_ios_outlined),
+                            );
+                          }, separatorBuilder: (context, index) {
+                            return Divider(thickness: 1,);
+                          }, itemCount: Settingss.length),
                         ),
                       ),
                     ),
