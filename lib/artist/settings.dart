@@ -1,5 +1,9 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:artist/artist/aboutus.dart';
+import 'package:artist/artist/editprofile.dart';
+import 'package:artist/artist/help.dart';
+import 'package:artist/artist/password.dart';
 import 'package:artist/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +16,7 @@ class Settings extends StatefulWidget {
 }
 
 class _SettingsState extends State<Settings> {
+  
   List Settingss =[
     {'icon':Icons.edit,'text1':'Edit Profile','text2':'Changes Required'},
     {'icon':Icons.password,'text1':'Password','text2':'Change Password'},
@@ -83,6 +88,17 @@ class _SettingsState extends State<Settings> {
                               ),),
                               subtitle: Text(Settingss[index]['text2']),
                               trailing: Icon(Icons.arrow_forward_ios_outlined),
+                              onTap: () {
+                                if (index == 0){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => EditProfile(),));
+                                }if (index == 1){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => Passwordd(),));
+                                }if (index == 2){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => HelpStt(),));
+                                }else if (index == 3){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => AboutUs(),));
+                                }
+                              },
                             );
                           }, separatorBuilder: (context, index) {
                             return Divider(thickness: 1,);

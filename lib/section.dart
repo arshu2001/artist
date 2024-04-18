@@ -1,4 +1,5 @@
 import 'package:artist/artist/regartist.dart';
+import 'package:artist/normal_user/normal_login.dart';
 import 'package:flutter/material.dart';
 
 class Section extends StatefulWidget {
@@ -58,18 +59,23 @@ class _SectionState extends State<Section> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 400,left: 80),
-              child: Container(
-                height: 70,
-                width: 230,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(20)
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => NormalLogin(),));
+                },
+                child: Container(
+                  height: 70,
+                  width: 230,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                  child: Center(child: Text('User',style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w400,
+                    fontFamily: 'Rosarivo'
+                  ),)),
                 ),
-                child: Center(child: Text('User',style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w400,
-                  fontFamily: 'Rosarivo'
-                ),)),
               ),
             )
 

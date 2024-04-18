@@ -37,7 +37,7 @@ class _BottomNavState extends State<BottomNav> {
             ),
              BottomNavigationBarItem(
             icon: Icon(Icons.message,color: Color.fromRGBO(191, 68, 116, 1),),
-            label: 'Home'
+            label: 'Message'
             ),
              BottomNavigationBarItem(
             icon: Icon(Icons.person,color: Color.fromRGBO(191, 68, 116, 1)),

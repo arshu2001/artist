@@ -1,3 +1,4 @@
+import 'package:artist/artist/addachev.dart';
 import 'package:flutter/material.dart';
 
 class Acheivement extends StatefulWidget {
@@ -138,7 +139,7 @@ class _AcheivementState extends State<Acheivement> {
                           backgroundColor: Colors.green
                         ),
                         onPressed: () {
-                        
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => AddAchev(),));
                       }, child: Text('Add +',style: TextStyle(
                         fontFamily: 'ubuntu',
                         color: Colors.white
