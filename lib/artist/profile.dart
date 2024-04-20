@@ -6,6 +6,7 @@ import 'package:artist/artist/schedule.dart';
 import 'package:artist/artist/settings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -127,14 +128,19 @@ class _ProfileState extends State<Profile> {
                             ),
                             ),
                           ),
-                          Icon(Icons.star,color: Colors.amber,),
-                          Icon(Icons.star,color: Colors.amber,),
-                          Icon(Icons.star,color: Colors.amber,),
-                          Icon(Icons.star,color: Colors.amber,),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 10),
-                            child: Icon(Icons.star),
-                          )
+                          RatingBar.builder(
+                            initialRating: 4,
+                            minRating: 1,
+                            direction: Axis.horizontal,
+                            allowHalfRating: true,
+                            itemCount: 5,
+                            itemSize: 20,
+                            itemPadding: EdgeInsets.symmetric(horizontal: 3.0),
+                            itemBuilder: (context, index) {
+                            return Icon(Icons.star,color: Colors.amber,);
+                          }, onRatingUpdate: (value) {
+                            print(value);
+                          },)
                         ],
                       ),
                     ),

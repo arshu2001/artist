@@ -1,30 +1,24 @@
-import 'package:artist/normal_user/acheivement.dart';
-import 'package:artist/normal_user/artists.dart';
-import 'package:artist/normal_user/booking.dart';
-import 'package:artist/normal_user/events.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-class NormalHome extends StatefulWidget {
-  const NormalHome({super.key});
+class AdminAmal extends StatefulWidget {
+  const AdminAmal({super.key});
 
   @override
-  State<NormalHome> createState() => _NormalHomeState();
+  State<AdminAmal> createState() => _AdminAmalState();
 }
 
-class _NormalHomeState extends State<NormalHome> {
+class _AdminAmalState extends State<AdminAmal> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
+    return Scaffold(
+      backgroundColor: Colors.white,
          body: Expanded(
             child: SingleChildScrollView(
               child: Stack(
                 children: [
                   InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => NormalArtist(),));
+                      // Navigator.push(context, MaterialPageRoute(builder: (context) => NormalArtist(),));
                     },
                     child: Container(
                       height: 230,
@@ -129,20 +123,14 @@ class _NormalHomeState extends State<NormalHome> {
                               ),
                               ),
                             ),
-                            RatingBar.builder(
-                              initialRating: 4,
-                              minRating: 1,
-                              direction: Axis.horizontal,
-                              allowHalfRating: true,
-                              itemCount: 5,
-                              itemSize: 20,
-                              itemPadding: EdgeInsets.symmetric(horizontal: 3.0),
-                              itemBuilder: (context, index) {
-                              return Icon(Icons.star,color: Colors.amber,);
-                            }, onRatingUpdate: (value) {
-                              print(value);
-                            },)
-
+                            Icon(Icons.star,color: Colors.amber,),
+                            Icon(Icons.star,color: Colors.amber,),
+                            Icon(Icons.star,color: Colors.amber,),
+                            Icon(Icons.star,color: Colors.amber,),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 10),
+                              child: Icon(Icons.star),
+                            )
                           ],
                         ),
                       ),
@@ -187,7 +175,7 @@ class _NormalHomeState extends State<NormalHome> {
                     padding: const EdgeInsets.only(top: 590,left: 40),
                     child: InkWell(
                       onTap: () {
-                       Navigator.push(context, MaterialPageRoute(builder: (context) => NormalEvents(),));
+                      //  Navigator.push(context, MaterialPageRoute(builder: (context) => NormalEvents(),));
                       },
                       child: Container(
                         height: 30,
@@ -204,7 +192,7 @@ class _NormalHomeState extends State<NormalHome> {
                     padding: const EdgeInsets.only(top: 590,left: 230),
                     child: InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => NormalAchev(),));
+                        // Navigator.push(context, MaterialPageRoute(builder: (context) => NormalAchev(),));
                       },
                       child: Container(
                         height: 30,
@@ -217,37 +205,6 @@ class _NormalHomeState extends State<NormalHome> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 640),
-                    child: InkWell(
-                      onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => UserBooking(),));
-                      },
-                      child: Container(
-                        height: 87,
-                        width: 390,
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                          colors: [
-                                   Color(0xFF9B3F3F), // Start color (#9B3F3F)
-                                   Color(0xFF000000), // End color (#000000)
-                                  ],
-                          ),
-                        ),
-                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text('Book Now',style: TextStyle(
-                              color: Color.fromRGBO(250, 233, 235, 1),
-                              fontSize: 44,
-                              fontWeight: FontWeight.w500,
-                              fontFamily: 'ubuntu'
-                            ),),
-                            Image.asset('images/book.png'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
                   Align(
                     alignment: Alignment.topRight,
                     child: IconButton(onPressed: () {
@@ -257,8 +214,8 @@ class _NormalHomeState extends State<NormalHome> {
                 ],
               ),
             ),
-          ),
-      ),
+         )
+        
     );
   }
 }
