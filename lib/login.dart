@@ -1,4 +1,5 @@
 import 'package:artist/admin/login.dart';
+import 'package:artist/artist/profile.dart';
 import 'package:artist/section.dart';
 import 'package:flutter/material.dart';
 
@@ -87,20 +88,25 @@ class _LoginState extends State<Login> {
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 15),
-                              child: Container(
-                                height: 60,
-                                width: 250,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(50)
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => Profile(),));
+                                },
+                                child: Container(
+                                  height: 60,
+                                  width: 250,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50)
+                                  ),
+                                  child: Center(child: Text('Login',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 36,
+                                    fontFamily: 'Rosarivo'
+                                  ),
+                                  )),
                                 ),
-                                child: Center(child: Text('Login',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 36,
-                                  fontFamily: 'Rosarivo'
-                                ),
-                                )),
                               ),
                             ),
                             Padding(
