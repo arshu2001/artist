@@ -32,6 +32,7 @@ class _ProfileState extends State<Profile> {
                     color: Color.fromRGBO(110, 176, 201, 1),
                     image: DecorationImage(image: AssetImage('images/backimg.png'),
                     fit: BoxFit.cover,
+                    
         
                     )
                   ),
