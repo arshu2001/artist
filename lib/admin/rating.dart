@@ -20,7 +20,7 @@ class _AdminRatingState extends State<AdminRating> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text('Rating',style: TextStyle(
             fontFamily: 'ubuntu',
             color: Color.fromRGBO(194, 74, 107, 1)
@@ -37,18 +37,18 @@ class _AdminRatingState extends State<AdminRating> {
               leading: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(imagepath ?? 'fallback_image.png')),
-              title: Text(art[index]['text1'],style: TextStyle(
+              title: Text(art[index]['text1'],style: const TextStyle(
                 fontSize: 18
               ),),
               subtitle: Text(art[index]['text2']),
               trailing: Wrap(
                 spacing: 8,
                 children: [
-                  Text('No of 5',style: TextStyle(
+                  const Text('No of 5',style: TextStyle(
                     fontSize: 15
                   ),),
-                  Icon(Icons.star,color: Colors.amber,size: 15,),
-                  Text(art[index]['num'],style: TextStyle(
+                  const Icon(Icons.star,color: Colors.amber,size: 15,),
+                  Text(art[index]['num'],style: const TextStyle(
                     fontSize: 15
                   ),),
                   CircleAvatar(
@@ -59,12 +59,12 @@ class _AdminRatingState extends State<AdminRating> {
               ),
               onTap: () {
                 if (index == 0){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => AdminAmal(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminAmal(),));
                 }
               },
              );
             }, separatorBuilder: (context, index) {
-              return Divider(thickness: 1,color: Colors.white,);
+              return const Divider(thickness: 1,color: Colors.white,);
             }, itemCount: art.length)
           ],
         ),

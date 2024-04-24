@@ -17,7 +17,7 @@ class _NormalPasswordState extends State<NormalPassword> {
              Container(
                   height: 230,
                   width: 395,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40)),
                     color: Color.fromRGBO(110, 176, 201, 1),
                     image: DecorationImage(image: AssetImage('images/backimg.png'),
@@ -25,7 +25,7 @@ class _NormalPasswordState extends State<NormalPassword> {
         
                     )
                   ),
-                  child: Center(child: Text('Change Password',
+                  child: const Center(child: Text('Change Password',
                   style: TextStyle(
                     fontFamily: 'ubuntu',
                     fontSize: 24
@@ -37,7 +37,7 @@ class _NormalPasswordState extends State<NormalPassword> {
                       child: Container(
                         height: 710,
                         width: 395,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(50)
@@ -47,7 +47,7 @@ class _NormalPasswordState extends State<NormalPassword> {
                           padding: const EdgeInsets.only(top: 50,left: 10,right: 10),
                           child: Column(
                             children: [
-                              Align(
+                              const Align(
                                 alignment: Alignment.topLeft,
                                 child: Text('Current Password',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -59,13 +59,13 @@ class _NormalPasswordState extends State<NormalPassword> {
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.grey)
+                                    borderSide: const BorderSide(color: Colors.grey)
                                   ),
                                   hintText: 'Example'
                                 ),
                                 
                               ),
-                              Align(
+                              const Align(
                                 alignment: Alignment.topLeft,
                                 child: Text('New Password',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -77,13 +77,13 @@ class _NormalPasswordState extends State<NormalPassword> {
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.grey)
+                                    borderSide: const BorderSide(color: Colors.grey)
                                   ),
                                   hintText: 'Example'
                                 ),
                                 
                               ),
-                              Align(
+                              const Align(
                                 alignment: Alignment.topLeft,
                                 child: Text('Re-enter Password',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -95,7 +95,7 @@ class _NormalPasswordState extends State<NormalPassword> {
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.grey)
+                                    borderSide: const BorderSide(color: Colors.grey)
                                   ),
                                   hintText: 'Example'
                                 ),
@@ -120,7 +120,7 @@ class _NormalPasswordState extends State<NormalPassword> {
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.blue
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text('Submit',style: TextStyle(
                                       fontFamily: 'ubuntu',
                                       color: Colors.white,

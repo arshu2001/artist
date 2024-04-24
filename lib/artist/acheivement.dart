@@ -13,7 +13,7 @@ class _AcheivementState extends State<Acheivement> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Acheivement',style: TextStyle(
+        title: const Center(child: Text('Acheivement',style: TextStyle(
           fontFamily: 'ubuntu',
           color: Color.fromRGBO(194, 74, 107, 1)
         ),)),
@@ -29,20 +29,20 @@ class _AcheivementState extends State<Acheivement> {
                     height: 127,
                     width: 312,
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(185, 228, 255, 0.5),
+                      color: const Color.fromRGBO(185, 228, 255, 0.5),
                       borderRadius: BorderRadius.circular(15)
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(top: 30),
                       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Align(
+                          const Align(
                             alignment: Alignment.center,
                             child: Text('shared  a collaboration work with Asianet')),
-                          Align(
+                          const Align(
                             alignment: Alignment.center,
                             child: Padding(
-                              padding: const EdgeInsets.only(right: 83,top: 10),
+                              padding: EdgeInsets.only(right: 83,top: 10),
                               child: Text('Ashianet Filim Award',style: TextStyle(
                                 fontSize: 18
                               ),),
@@ -64,20 +64,20 @@ class _AcheivementState extends State<Acheivement> {
                       height: 127,
                       width: 312,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(220, 231, 222, 1),
+                        color: const Color.fromRGBO(220, 231, 222, 1),
                         borderRadius: BorderRadius.circular(15)
                       ),
                       child: Padding(
                         padding: const EdgeInsets.only(top: 30),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Align(
+                            const Align(
                               alignment: Alignment.center,
                               child: Text('shared  a collaboration work with Asianet')),
-                            Align(
+                            const Align(
                               alignment: Alignment.center,
                               child: Padding(
-                                padding: const EdgeInsets.only(right: 83,top: 10),
+                                padding: EdgeInsets.only(right: 83,top: 10),
                                 child: Text('Ashianet Filim Award',style: TextStyle(
                                   fontSize: 18
                                 ),),
@@ -100,20 +100,20 @@ class _AcheivementState extends State<Acheivement> {
                       height: 127,
                       width: 312,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(205, 108, 135, 0.3),
+                        color: const Color.fromRGBO(205, 108, 135, 0.3),
                         borderRadius: BorderRadius.circular(15)
                       ),
                       child: Padding(
                         padding: const EdgeInsets.only(top: 30),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Align(
+                            const Align(
                               alignment: Alignment.center,
                               child: Text('shared  a collaboration work with Asianet')),
-                            Align(
+                            const Align(
                               alignment: Alignment.center,
                               child: Padding(
-                                padding: const EdgeInsets.only(right: 83,top: 10),
+                                padding: EdgeInsets.only(right: 83,top: 10),
                                 child: Text('Ashianet Filim Award',style: TextStyle(
                                   fontSize: 18
                                 ),),
@@ -139,8 +139,8 @@ class _AcheivementState extends State<Acheivement> {
                           backgroundColor: Colors.green
                         ),
                         onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => AddAchev(),));
-                      }, child: Text('Add +',style: TextStyle(
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const AddAchev(),));
+                      }, child: const Text('Add +',style: TextStyle(
                         fontFamily: 'ubuntu',
                         color: Colors.white
                       ),)),

@@ -1,4 +1,3 @@
-import 'package:artist/admin/amal.dart';
 import 'package:artist/admin/usercheck.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +16,7 @@ class _AdminUserState extends State<AdminUser> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text('User',style: TextStyle(
             fontFamily: 'ubuntu',
             color: Color.fromRGBO(194, 74, 107, 1)
@@ -33,7 +32,7 @@ class _AdminUserState extends State<AdminUser> {
               leading: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(imagepath ?? 'fallback_image.png')),
-              title: Text(art[index]['text1'],style: TextStyle(
+              title: Text(art[index]['text1'],style: const TextStyle(
                 fontSize: 16
               ),),
               trailing: Wrap(
@@ -45,7 +44,7 @@ class _AdminUserState extends State<AdminUser> {
                     ),
                     onPressed: () {
                   
-                }, child: Text('Ban',style: TextStyle(
+                }, child: const Text('Ban',style: TextStyle(
                   color: Colors.white
                 ),)),
                 ElevatedButton(
@@ -53,15 +52,15 @@ class _AdminUserState extends State<AdminUser> {
                     backgroundColor: Colors.blue
                   ),
                   onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => AdminCheck(),));
-                }, child: Text('Check',style: TextStyle(
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminCheck(),));
+                }, child: const Text('Check',style: TextStyle(
                   color: Colors.white
                 ),)),
                 ],
               ),
              );
             }, separatorBuilder: (context, index) {
-              return Divider(thickness: 1,color: Colors.white,);
+              return const Divider(thickness: 1,color: Colors.white,);
             }, itemCount: art.length)
           ],
         ),

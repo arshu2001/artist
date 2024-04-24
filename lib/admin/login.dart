@@ -19,7 +19,7 @@ class _AdminLoginState extends State<AdminLogin> {
           child: Stack(
             children: [
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
                     Color.fromRGBO(25, 93, 120, 0.61),
@@ -50,7 +50,7 @@ class _AdminLoginState extends State<AdminLogin> {
                       child: Container(
                         width: 350,
                         height: 370,
-                        color: Color.fromRGBO(217, 217, 217, 0.3),
+                        color: const Color.fromRGBO(217, 217, 217, 0.3),
                         child: Padding(
                           padding: const EdgeInsets.only(top: 50),
                           child: Column(
@@ -58,7 +58,7 @@ class _AdminLoginState extends State<AdminLogin> {
                               SizedBox(
                                 width: 300,
                                 child: TextFormField(
-                                  decoration: InputDecoration(
+                                  decoration: const InputDecoration(
                                     hintText: 'Enter Username',
                                     hintStyle: TextStyle(
                                       fontFamily: 'Rosarivo'
@@ -69,7 +69,7 @@ class _AdminLoginState extends State<AdminLogin> {
                               SizedBox(
                                 width: 300,
                                 child: TextFormField(
-                                  decoration: InputDecoration(
+                                  decoration: const InputDecoration(
                                     hintText: 'Enter your Password',
                                     hintStyle: TextStyle(
                                       fontFamily: 'Rosarivo'
@@ -81,7 +81,7 @@ class _AdminLoginState extends State<AdminLogin> {
                                 padding: const EdgeInsets.only(top: 65),
                                 child: InkWell(
                                   onTap: () {
-                                    Navigator.push(context, MaterialPageRoute(builder: (context) => AdminManage(),));
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminManage(),));
                                   },
                                   child: Container(
                                     height: 60,
@@ -90,7 +90,7 @@ class _AdminLoginState extends State<AdminLogin> {
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(50)
                                     ),
-                                    child: Center(child: Text('Sign Up',
+                                    child: const Center(child: Text('Sign Up',
                                     style: TextStyle(
                                       fontWeight: FontWeight.w400,
                                       fontSize: 36,
@@ -104,7 +104,7 @@ class _AdminLoginState extends State<AdminLogin> {
                                 padding: const EdgeInsets.only(top: 20),
                                 child: TextButton(onPressed: () {
                                   
-                                }, child: Text('Forgot Password?',style: TextStyle(
+                                }, child: const Text('Forgot Password?',style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: 'Rosarivo',
@@ -123,8 +123,8 @@ class _AdminLoginState extends State<AdminLogin> {
               Align(
                 alignment: Alignment.topRight,
                 child: IconButton(onPressed: () {
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => AdminLogin(),)) ;
-                }, icon: Icon(Icons.more_vert_sharp)))
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminLogin(),)) ;
+                }, icon: const Icon(Icons.more_vert_sharp)))
             ],
           ),
         ),

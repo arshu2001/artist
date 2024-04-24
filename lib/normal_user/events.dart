@@ -12,7 +12,7 @@ class _NormalEventsState extends State<NormalEvents> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text('Events',style: TextStyle(
             fontFamily: 'ubuntu',
             color: Color.fromRGBO(194, 74, 107, 1)
@@ -25,7 +25,7 @@ class _NormalEventsState extends State<NormalEvents> {
             children: [
               Column(crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(width: double.infinity,),
+                  const SizedBox(width: double.infinity,),
                   Padding(
                     padding: const EdgeInsets.only(top: 10),
                     child: Container(
@@ -34,11 +34,11 @@ class _NormalEventsState extends State<NormalEvents> {
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(image: AssetImage('images/events.png'),
+                        image: const DecorationImage(image: AssetImage('images/events.png'),
                         fit: BoxFit.cover
                         )
                       ),
-                      child: Icon(Icons.play_circle,size: 70,color: Colors.white,),
+                      child: const Icon(Icons.play_circle,size: 70,color: Colors.white,),
                     ),
                   ),
                    Padding(
@@ -49,11 +49,11 @@ class _NormalEventsState extends State<NormalEvents> {
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(image: AssetImage('images/event2.png'),
+                        image: const DecorationImage(image: AssetImage('images/event2.png'),
                         fit: BoxFit.cover
                         )
                       ),
-                      child: Icon(Icons.play_circle,size: 70,color: Colors.white,),
+                      child: const Icon(Icons.play_circle,size: 70,color: Colors.white,),
                     ),
                    ),
                   Padding(
@@ -64,11 +64,11 @@ class _NormalEventsState extends State<NormalEvents> {
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(image: AssetImage('images/event3.png'),
+                        image: const DecorationImage(image: AssetImage('images/event3.png'),
                         fit: BoxFit.cover
                         )
                       ),
-                      child: Icon(Icons.play_circle,size: 70,color: Colors.white,),
+                      child: const Icon(Icons.play_circle,size: 70,color: Colors.white,),
                     ),
                   ),
                   Align(
@@ -81,7 +81,7 @@ class _NormalEventsState extends State<NormalEvents> {
                         ),
                         onPressed: () {
                         Navigator.pop(context);
-                      }, child: Text('Add +',style: TextStyle(
+                      }, child: const Text('Add +',style: TextStyle(
                         color: Colors.white
                       
                       ),)),
@@ -96,11 +96,11 @@ class _NormalEventsState extends State<NormalEvents> {
                       height: 65,
                       width: 341,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(251, 250, 248, 0.369),
+                        color: const Color.fromRGBO(251, 250, 248, 0.369),
                         borderRadius: BorderRadius.circular(20)
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 10,top: 10),
+                      child: const Padding(
+                        padding: EdgeInsets.only(left: 10,top: 10),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('KONDOTTY program',style: TextStyle(
@@ -122,11 +122,11 @@ class _NormalEventsState extends State<NormalEvents> {
                       height: 65,
                       width: 341,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(251, 250, 248, 0.369),
+                        color: const Color.fromRGBO(251, 250, 248, 0.369),
                         borderRadius: BorderRadius.circular(20)
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 10,top: 10),
+                      child: const Padding(
+                        padding: EdgeInsets.only(left: 10,top: 10),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('TRIVANDRAM program',style: TextStyle(
@@ -148,11 +148,11 @@ class _NormalEventsState extends State<NormalEvents> {
                       height: 65,
                       width: 341,
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(251, 250, 248, 0.369),
+                        color: const Color.fromRGBO(251, 250, 248, 0.369),
                         borderRadius: BorderRadius.circular(20)
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 10,top: 10),
+                      child: const Padding(
+                        padding: EdgeInsets.only(left: 10,top: 10),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('KOCHI program',style: TextStyle(

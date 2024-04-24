@@ -17,7 +17,7 @@ class _SectionState extends State<Section> {
         child: Stack(
           children: [
             Container(
-              color: Color.fromRGBO(110, 176, 201, 1)
+              color: const Color.fromRGBO(110, 176, 201, 1)
             ),
             Padding(
               padding: const EdgeInsets.only(top: 150),
@@ -31,7 +31,7 @@ class _SectionState extends State<Section> {
                   child: Container(
                     height: 320,
                     width: 330,
-                    color: Color.fromRGBO(217, 217, 217, 0.59),
+                    color: const Color.fromRGBO(217, 217, 217, 0.59),
                   ),
                 ),
               ],
@@ -40,7 +40,7 @@ class _SectionState extends State<Section> {
               padding: const EdgeInsets.only(top: 280,left: 80),
               child: InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => RegArtist(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const RegArtist(),));
                 },
                 child: Container(
                   height: 70,
@@ -49,7 +49,7 @@ class _SectionState extends State<Section> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20)
                   ),
-                  child: Center(child: Text('Artist',style: TextStyle(
+                  child: const Center(child: Text('Artist',style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.w400,
                     fontFamily: 'Rosarivo'
@@ -61,7 +61,7 @@ class _SectionState extends State<Section> {
               padding: const EdgeInsets.only(top: 400,left: 80),
               child: InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => NormalLogin(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const NormalLogin(),));
                 },
                 child: Container(
                   height: 70,
@@ -70,7 +70,7 @@ class _SectionState extends State<Section> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20)
                   ),
-                  child: Center(child: Text('User',style: TextStyle(
+                  child: const Center(child: Text('User',style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.w400,
                     fontFamily: 'Rosarivo'

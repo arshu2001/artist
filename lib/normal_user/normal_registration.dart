@@ -12,15 +12,15 @@ class _NormalRegistrationState extends State<NormalRegistration> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(110, 176, 201, 1),
+      backgroundColor: const Color.fromRGBO(110, 176, 201, 1),
       body: SingleChildScrollView(
         child: Stack(
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 20),
+                  padding: EdgeInsets.only(top: 20),
                   child: Text('Registration',style: TextStyle(
                     fontSize: 28,
                     fontFamily: 'RobotoSerif',
@@ -29,11 +29,11 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                 ),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 90),
+                  padding: EdgeInsets.only(top: 90),
                   child: CircleAvatar(
                     radius: 60,
                     backgroundImage: AssetImage('images/imgicon.png'),
@@ -50,7 +50,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                     child: SizedBox(
                       width: 330,
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                                     hintText: 'First Name',
                                     hintStyle: TextStyle(
                                       fontFamily: 'Rosarivo'
@@ -62,7 +62,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                   SizedBox(
                     width: 330,
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                                   hintText: 'Email',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -73,7 +73,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                   SizedBox(
                     width: 330,
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                                   hintText: 'Password',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -83,7 +83,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                   ),
                   SizedBox(
                     width: 330,
-                    child: TextFormField(decoration: InputDecoration(
+                    child: TextFormField(decoration: const InputDecoration(
                                   hintText: 'Re-enter Password',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -93,7 +93,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                   SizedBox(
                     width: 330,
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                                   hintText: 'Address',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -104,7 +104,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                   SizedBox(
                     width: 330,
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                                   hintText: 'Phone',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -115,7 +115,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                   SizedBox(
                     width: 330,
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                                   hintText: 'Account Type',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -127,7 +127,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                     padding: const EdgeInsets.only(top: 75),
                     child: InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => NormalBotnav(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const NormalBotnav(),));
                       },
                       child: Container(
                         height: 70,
@@ -136,7 +136,7 @@ class _NormalRegistrationState extends State<NormalRegistration> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(50)
                         ),
-                        child: Center(child: Text('Sign Up',style: TextStyle(
+                        child: const Center(child: Text('Sign Up',style: TextStyle(
                           fontSize: 32,
                           fontFamily: 'Rosarivo',
                           fontWeight: FontWeight.w400

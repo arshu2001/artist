@@ -16,7 +16,7 @@ class _AdminCheckState extends State<AdminCheck> {
             children: [
               Container(
                         height: 150,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
                           color: Color.fromRGBO(110, 176, 201, 1),
                           image: DecorationImage(image: AssetImage('images/backimg.png'),
@@ -25,15 +25,15 @@ class _AdminCheckState extends State<AdminCheck> {
                           )
                         ),
                       ),
-                      Padding(
-                      padding: const EdgeInsets.only(top: 30,left: 20),
+                      const Padding(
+                      padding: EdgeInsets.only(top: 30,left: 20),
                       child: CircleAvatar(
                         backgroundImage: AssetImage('images/deve.png'),
                         radius: 50,
                         ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 50,left: 150),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 50,left: 150),
                       child: Text('Devanand s',style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.w700,
@@ -47,13 +47,13 @@ class _AdminCheckState extends State<AdminCheck> {
                         height: 60,
                         width: 375,
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(199, 100, 120, 0.20),
+                          color: const Color.fromRGBO(199, 100, 120, 0.20),
                           borderRadius: BorderRadius.circular(10)
                         ),
-                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        child: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 20),
+                              padding: EdgeInsets.only(left: 20),
                               child: Text('phone',
                               style: TextStyle(
                                 color: Color.fromRGBO(134, 135, 142, 1),
@@ -62,7 +62,7 @@ class _AdminCheckState extends State<AdminCheck> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(right: 20),
+                              padding: EdgeInsets.only(right: 20),
                               child: Text('+91 6282607722',
                               style: TextStyle(
                                 fontFamily: 'ubuntu'
@@ -79,13 +79,13 @@ class _AdminCheckState extends State<AdminCheck> {
                         height: 60,
                         width: 375,
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(199, 100, 120, 0.20),
+                          color: const Color.fromRGBO(199, 100, 120, 0.20),
                           borderRadius: BorderRadius.circular(10)
                         ),
-                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        child: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 20),
+                              padding: EdgeInsets.only(left: 20),
                               child: Text('Emale',
                               style: TextStyle(
                                 color: Color.fromRGBO(134, 135, 142, 1),
@@ -94,7 +94,7 @@ class _AdminCheckState extends State<AdminCheck> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(right: 20),
+                              padding: EdgeInsets.only(right: 20),
                               child: Text('devanand@gmail.com',
                               style: TextStyle(
                                 fontFamily: 'ubuntu'
@@ -111,13 +111,13 @@ class _AdminCheckState extends State<AdminCheck> {
                         height: 60,
                         width: 375,
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(199, 100, 120, 0.20),
+                          color: const Color.fromRGBO(199, 100, 120, 0.20),
                           borderRadius: BorderRadius.circular(10)
                         ),
-                        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        child: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 20),
+                              padding: EdgeInsets.only(left: 20),
                               child: Text('place',
                               style: TextStyle(
                                 color: Color.fromRGBO(134, 135, 142, 1),
@@ -126,7 +126,7 @@ class _AdminCheckState extends State<AdminCheck> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(right: 20),
+                              padding: EdgeInsets.only(right: 20),
                               child: Text('Kochi',
                               style: TextStyle(
                                 fontFamily: 'ubuntu'
@@ -144,13 +144,13 @@ class _AdminCheckState extends State<AdminCheck> {
                           height: 60,
                           width: 375,
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(199, 100, 120, 0.20),
+                            color: const Color.fromRGBO(199, 100, 120, 0.20),
                             borderRadius: BorderRadius.circular(10)
                           ),
-                          child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          child: const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(left: 20),
+                                padding: EdgeInsets.only(left: 20),
                                 child: Text('Address',
                                 style: TextStyle(
                                   color: Color.fromRGBO(134, 135, 142, 1),

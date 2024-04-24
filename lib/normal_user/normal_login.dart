@@ -17,7 +17,7 @@ class _NormalLoginState extends State<NormalLogin> {
         child: Stack(
           children: [
             Container(
-              color: Color.fromRGBO(110, 176, 201, 1),
+              color: const Color.fromRGBO(110, 176, 201, 1),
             ),
             Container(
               
@@ -38,13 +38,13 @@ class _NormalLoginState extends State<NormalLogin> {
                     child: Container(
                       width: 350,
                       height: 370,
-                      color: Color.fromRGBO(217, 217, 217, 0.3),
+                      color: const Color.fromRGBO(217, 217, 217, 0.3),
                       child: Column(
                         children: [
                           SizedBox(
                             width: 300,
                             child: TextFormField(
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 hintText: 'Username',
                                 hintStyle: TextStyle(
                                   fontFamily: 'Rosarivo'
@@ -55,7 +55,7 @@ class _NormalLoginState extends State<NormalLogin> {
                           SizedBox(
                             width: 300,
                             child: TextFormField(
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 hintText: 'Email',
                                 hintStyle: TextStyle(
                                   fontFamily: 'Rosarivo'
@@ -65,7 +65,7 @@ class _NormalLoginState extends State<NormalLogin> {
                           SizedBox(
                             width: 300,
                             child: TextFormField(
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 hintText: 'Password',
                                 hintStyle: TextStyle(
                                   fontFamily: 'Rosarivo'
@@ -78,7 +78,7 @@ class _NormalLoginState extends State<NormalLogin> {
                             padding: const EdgeInsets.only(top: 75),
                             child: InkWell(
                               onTap: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => NormalBotnav(),));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const NormalBotnav(),));
                               },
                               child: Container(
                                 height: 60,
@@ -87,7 +87,7 @@ class _NormalLoginState extends State<NormalLogin> {
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(50)
                                 ),
-                                child: Center(child: Text('Login',
+                                child: const Center(child: Text('Login',
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontSize: 36,
@@ -100,8 +100,8 @@ class _NormalLoginState extends State<NormalLogin> {
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
                             child: TextButton(onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => NormalRegistration(),));
-                            }, child: Text('Sign up',style: TextStyle(
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => const NormalRegistration(),));
+                            }, child: const Text('Sign up',style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w400,
                               fontFamily: 'Rosarivo',

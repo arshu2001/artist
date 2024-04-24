@@ -17,7 +17,7 @@ class _AddAchevState extends State<AddAchev> {
              Container(
                   height: 230,
                   width: 395,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40)),
                     color: Color.fromRGBO(110, 176, 201, 1),
                     image: DecorationImage(image: AssetImage('images/backimg.png'),
@@ -25,7 +25,7 @@ class _AddAchevState extends State<AddAchev> {
         
                     )
                   ),
-                  child: Center(child: Text('Add Acheivement',
+                  child: const Center(child: Text('Add Acheivement',
                   style: TextStyle(
                     fontFamily: 'ubuntu',
                     fontSize: 24
@@ -37,7 +37,7 @@ class _AddAchevState extends State<AddAchev> {
                       child: Container(
                         height: 710,
                         width: 395,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(50)
@@ -47,7 +47,7 @@ class _AddAchevState extends State<AddAchev> {
                           padding: const EdgeInsets.only(top: 50,left: 10,right: 10),
                           child: Column(
                             children: [
-                              Align(
+                              const Align(
                                 alignment: Alignment.topLeft,
                                 child: Text('Content',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -59,13 +59,13 @@ class _AddAchevState extends State<AddAchev> {
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.grey)
+                                    borderSide: const BorderSide(color: Colors.grey)
                                   ),
                                   hintText: 'Example'
                                 ),
                                 
                               ),
-                              Align(
+                              const Align(
                                 alignment: Alignment.topLeft,
                                 child: Text('Title',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -77,13 +77,13 @@ class _AddAchevState extends State<AddAchev> {
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.grey)
+                                    borderSide: const BorderSide(color: Colors.grey)
                                   ),
                                   hintText: 'Example'
                                 ),
                                 
                               ),
-                              Align(
+                              const Align(
                                 alignment: Alignment.topLeft,
                                 child: Text('Link',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -95,7 +95,7 @@ class _AddAchevState extends State<AddAchev> {
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10),
-                                    borderSide: BorderSide(color: Colors.grey)
+                                    borderSide: const BorderSide(color: Colors.grey)
                                   ),
                                   hintText: 'Example'
                                 ),
@@ -120,7 +120,7 @@ class _AddAchevState extends State<AddAchev> {
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.blue
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text('Submit',style: TextStyle(
                                       fontFamily: 'ubuntu',
                                       color: Colors.white,

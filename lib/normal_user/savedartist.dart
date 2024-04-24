@@ -19,7 +19,7 @@ class _SavedArtistState extends State<SavedArtist> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text('Artists',style: TextStyle(
             fontFamily: 'ubuntu',
             color: Color.fromRGBO(194, 74, 107, 1)
@@ -35,7 +35,7 @@ class _SavedArtistState extends State<SavedArtist> {
               leading: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(imagepath ?? 'fallback_image.png')),
-              title: Text(art[index]['text1'],style: TextStyle(
+              title: Text(art[index]['text1'],style: const TextStyle(
                 fontSize: 18
               ),),
               subtitle: Text(art[index]['text2']),
@@ -50,7 +50,7 @@ class _SavedArtistState extends State<SavedArtist> {
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.blue,
                   ),
-                  child: Center(child: Text('check',style: TextStyle(
+                  child: const Center(child: Text('check',style: TextStyle(
                     fontFamily: 'ubuntu',
                     color: Colors.white,
                     fontSize: 16
@@ -59,7 +59,7 @@ class _SavedArtistState extends State<SavedArtist> {
               ),
              );
             }, separatorBuilder: (context, index) {
-              return Divider(thickness: 1,color: Colors.white,);
+              return const Divider(thickness: 1,color: Colors.white,);
             }, itemCount: art.length)
           ],
         ),

@@ -12,8 +12,8 @@ class NormalBotnav extends StatefulWidget {
 class _NormalBotnavState extends State<NormalBotnav> {
     int currentIndex = 0;
   List screens = [
-    NormalHome(),
-    NormalProfile()
+    const NormalHome(),
+    const NormalProfile()
 
   ];
   @override
@@ -21,7 +21,7 @@ class _NormalBotnavState extends State<NormalBotnav> {
     return Scaffold(
        body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Color.fromRGBO(246, 238, 240, 1),
+          backgroundColor: const Color.fromRGBO(246, 238, 240, 1),
           currentIndex: currentIndex,
           onTap: (value) {
             setState(() {

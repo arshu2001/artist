@@ -16,7 +16,7 @@ class _NormalHelpState extends State<NormalHelp> {
           children: [
             Container(
                   height: 230,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40)),
                     color: Color.fromRGBO(110, 176, 201, 1),
                     image: DecorationImage(image: AssetImage('images/backimg.png'),
@@ -30,7 +30,7 @@ class _NormalHelpState extends State<NormalHelp> {
                       child: Container(
                         height: 710,
                         width: 395,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(50)
@@ -40,7 +40,7 @@ class _NormalHelpState extends State<NormalHelp> {
                           padding: const EdgeInsets.only(top: 50,left: 10,right: 10),
                           child: Column(
                             children: [
-                              Align(
+                              const Align(
                                 alignment: Alignment.topLeft,
                                 child: Text('Describe your Problem',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -83,7 +83,7 @@ class _NormalHelpState extends State<NormalHelp> {
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.blue
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text('Submit',style: TextStyle(
                                       fontFamily: 'ubuntu',
                                       color: Colors.white,

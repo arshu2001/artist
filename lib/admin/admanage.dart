@@ -19,7 +19,7 @@ class _AdminManageState extends State<AdminManage> {
         body: Expanded(
           child: Stack(
             children: [
-               Container(
+               SizedBox(
               height: double.infinity,
               child: Image.asset('images/manage.jpeg',fit: BoxFit.cover,),
               ),
@@ -28,13 +28,13 @@ class _AdminManageState extends State<AdminManage> {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => AdminArtist(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminArtist(),));
                       },
                       child: Container(
                         height: 81,
                         width: 312,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             
                             colors: [
                               Color.fromRGBO(94, 213, 233, 1),
@@ -42,7 +42,7 @@ class _AdminManageState extends State<AdminManage> {
                             ]),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text('Artists',style: TextStyle(
                             fontFamily: 'ubuntu',
                             fontSize: 50
@@ -52,13 +52,13 @@ class _AdminManageState extends State<AdminManage> {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => AdminUser(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminUser(),));
                       },
                       child: Container(
                         height: 81,
                         width: 312,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             
                             colors: [
                               Color.fromRGBO(94, 213, 233, 1),
@@ -66,7 +66,7 @@ class _AdminManageState extends State<AdminManage> {
                             ]),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text('User',style: TextStyle(
                             fontFamily: 'ubuntu',
                             fontSize: 50
@@ -76,13 +76,13 @@ class _AdminManageState extends State<AdminManage> {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => AdminRating(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminRating(),));
                       },
                       child: Container(
                         height: 81,
                         width: 312,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
+                          gradient: const LinearGradient(
                             
                             colors: [
                               Color.fromRGBO(94, 213, 233, 1),
@@ -90,7 +90,7 @@ class _AdminManageState extends State<AdminManage> {
                             ]),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text('Rating & badge',style: TextStyle(
                             fontFamily: 'ubuntu',
                             fontSize: 30
@@ -113,7 +113,7 @@ class _AdminManageState extends State<AdminManage> {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.red
                     ),
-                    child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                    child: const Row(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('Logout',style: TextStyle(
                           fontFamily: 'ubuntu',

@@ -12,7 +12,7 @@ class _BookingDetailState extends State<BookingDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text('Booking',style: TextStyle(
             fontFamily: 'ubuntu',
             color: Color.fromRGBO(194, 74, 107, 1)
@@ -31,7 +31,7 @@ class _BookingDetailState extends State<BookingDetail> {
                   width: 335,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Color.fromRGBO(233, 234, 244, 1)
+                    color: const Color.fromRGBO(233, 234, 244, 1)
                   ),
                 ),
               ),
@@ -43,9 +43,9 @@ class _BookingDetailState extends State<BookingDetail> {
                 width: 253,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: Color.fromRGBO(204, 207, 232, 0.63)
+                  color: const Color.fromRGBO(204, 207, 232, 0.63)
                 ),
-                child: Center(child: Text('Thissur Morning Section',style: TextStyle(
+                child: const Center(child: Text('Thissur Morning Section',style: TextStyle(
                   fontFamily: 'ubuntu',
                   fontSize: 18,
                   color: Color.fromRGBO(98, 99, 106, 0.627)
@@ -59,9 +59,9 @@ class _BookingDetailState extends State<BookingDetail> {
                 width: 253,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: Color.fromRGBO(204, 207, 232, 0.63)
+                  color: const Color.fromRGBO(204, 207, 232, 0.63)
                 ),
-                child: Center(child: Text('Kochi night section',style: TextStyle(
+                child: const Center(child: Text('Kochi night section',style: TextStyle(
                   fontFamily: 'ubuntu',
                   fontSize: 18,
                   color: Color.fromRGBO(98, 99, 106, 0.627)
@@ -77,7 +77,7 @@ class _BookingDetailState extends State<BookingDetail> {
                   ),
                   onPressed: () {
                   
-                }, child: Text('Added',style: TextStyle(
+                }, child: const Text('Added',style: TextStyle(
                   fontFamily: 'ubuntu',
                   color: Colors.white,
                   fontSize: 18
@@ -93,7 +93,7 @@ class _BookingDetailState extends State<BookingDetail> {
                    ),
                    onPressed: () {
                    
-                 }, child: Text('Add',style: TextStyle(
+                 }, child: const Text('Add',style: TextStyle(
                    fontFamily: 'ubuntu',
                    color: Colors.white,
                    fontSize: 18

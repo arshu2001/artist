@@ -43,11 +43,11 @@ class _ChatSystemState extends State<ChatSystem> {
                 padding: const EdgeInsets.only(left: 10),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Messages',style: TextStyle(
+                    const Text('Messages',style: TextStyle(
                       fontFamily: 'ubuntu',
                       fontSize: 32
                     ),),
-                    Text('7 conveners',style: TextStyle(
+                    const Text('7 conveners',style: TextStyle(
                       fontFamily: 'ubuntu',
                       color: Color.fromRGBO(173, 181, 189, 1),
                       fontSize: 12
@@ -57,9 +57,9 @@ class _ChatSystemState extends State<ChatSystem> {
                       child: Container(
                         height: 40,
                         width: 380,
-                        color: Color.fromARGB(255, 241, 239, 239),
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 330,top: 8),
+                        color: const Color.fromARGB(255, 241, 239, 239),
+                        child: const Padding(
+                          padding: EdgeInsets.only(right: 330,top: 8),
                           child: Icon(Icons.search),
                         ),
                       ),
@@ -67,15 +67,15 @@ class _ChatSystemState extends State<ChatSystem> {
                    Container(
                     height: 60,
                     width: 390,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       border: Border(
                         bottom: BorderSide(
                           color: Colors.black,
                         )
                       )
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 20),
+                    child: const Padding(
+                      padding: EdgeInsets.only(top: 20),
                       child: Text('Chats',style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400
@@ -89,7 +89,7 @@ class _ChatSystemState extends State<ChatSystem> {
                 padding: const EdgeInsets.only(top: 200),
                 child: Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 500,
                       child: ListView.builder(
                         scrollDirection: Axis.vertical,
@@ -98,7 +98,7 @@ class _ChatSystemState extends State<ChatSystem> {
                           final imagepath = person[index]['imagepath'];
                         return ListTile(
                           onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => ChatMessage(),));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const ChatMessage(),));
                           },
                           leading: ClipRRect(
                             borderRadius: BorderRadius.circular(14),
@@ -109,7 +109,7 @@ class _ChatSystemState extends State<ChatSystem> {
                               child: Image.asset(imagepath ?? 'fallback_image.png')),
                           ),
                           title: Text(person[index]['name']),
-                          subtitle: Text(person[index]['status'],style: TextStyle(
+                          subtitle: Text(person[index]['status'],style: const TextStyle(
                             color: Color.fromRGBO(86, 227, 159, 1)
                           ),),
                         );
@@ -124,7 +124,7 @@ class _ChatSystemState extends State<ChatSystem> {
                   height: 10,
                   width: 10,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(86, 227, 159, 1),
+                    color: const Color.fromRGBO(86, 227, 159, 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                 ),

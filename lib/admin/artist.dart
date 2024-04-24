@@ -1,4 +1,3 @@
-import 'package:artist/admin/amal.dart';
 import 'package:flutter/material.dart';
 
 class AdminArtist extends StatefulWidget {
@@ -20,7 +19,7 @@ class _AdminArtistState extends State<AdminArtist> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text('Artists',style: TextStyle(
             fontFamily: 'ubuntu',
             color: Color.fromRGBO(194, 74, 107, 1)
@@ -36,7 +35,7 @@ class _AdminArtistState extends State<AdminArtist> {
               leading: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(imagepath ?? 'fallback_image.png')),
-              title: Text(art[index]['text1'],style: TextStyle(
+              title: Text(art[index]['text1'],style: const TextStyle(
                 fontSize: 18
               ),),
               subtitle: Text(art[index]['text2']),
@@ -49,7 +48,7 @@ class _AdminArtistState extends State<AdminArtist> {
                     ),
                     onPressed: () {
                   
-                }, child: Text('Ban',style: TextStyle(
+                }, child: const Text('Ban',style: TextStyle(
                   color: Colors.white
                 ),)),
                 ElevatedButton(
@@ -58,14 +57,14 @@ class _AdminArtistState extends State<AdminArtist> {
                   ),
                   onPressed: () {
                   
-                }, child: Text('Check',style: TextStyle(
+                }, child: const Text('Check',style: TextStyle(
                   color: Colors.white
                 ),)),
                 ],
               ),
              );
             }, separatorBuilder: (context, index) {
-              return Divider(thickness: 1,color: Colors.white,);
+              return const Divider(thickness: 1,color: Colors.white,);
             }, itemCount: art.length)
           ],
         ),

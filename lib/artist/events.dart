@@ -104,7 +104,7 @@ class _EventsState extends State<Events> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 10,top: 10),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text('KONDOTTY program',style: TextStyle(
                               fontSize: 16,
                               fontFamily: 'ubuntu',
@@ -130,7 +130,7 @@ class _EventsState extends State<Events> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 10,top: 10),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text('TRIVANDRAM program',style: TextStyle(
                               fontSize: 16,
                               fontFamily: 'ubuntu',
@@ -156,7 +156,7 @@ class _EventsState extends State<Events> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 10,top: 10),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          children: const [
                             Text('KOCHI program',style: TextStyle(
                               fontSize: 16,
                               fontFamily: 'ubuntu',

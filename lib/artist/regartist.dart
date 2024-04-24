@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:artist/artist/bottomnav.dart';
-import 'package:artist/artist/profile.dart';
 import 'package:flutter/material.dart';
 
 class RegArtist extends StatefulWidget {

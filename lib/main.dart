@@ -1,4 +1,3 @@
-import 'package:artist/artist/chatmessage.dart';
 import 'package:artist/firstpage.dart';
 import 'package:flutter/material.dart';
 

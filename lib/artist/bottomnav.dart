@@ -23,7 +23,7 @@ class _BottomNavState extends State<BottomNav> {
     return Scaffold(
       body: screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Color.fromRGBO(246, 238, 240, 1),
+          backgroundColor: const Color.fromRGBO(246, 238, 240, 1),
           currentIndex: currentIndex,
           onTap: (value) {
             setState(() {

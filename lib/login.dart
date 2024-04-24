@@ -19,7 +19,7 @@ class _LoginState extends State<Login> {
           child: Stack(
             children: [
               Container(
-                color: Color.fromRGBO(110, 176, 201, 1),
+                color: const Color.fromRGBO(110, 176, 201, 1),
               ),
               Container(
                 
@@ -40,13 +40,13 @@ class _LoginState extends State<Login> {
                       child: Container(
                         width: 350,
                         height: 370,
-                        color: Color.fromRGBO(217, 217, 217, 0.3),
+                        color: const Color.fromRGBO(217, 217, 217, 0.3),
                         child: Column(
                           children: [
                             SizedBox(
                               width: 300,
                               child: TextFormField(
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   hintText: 'Username',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -57,7 +57,7 @@ class _LoginState extends State<Login> {
                             SizedBox(
                               width: 300,
                               child: TextFormField(
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   hintText: 'Email',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -67,7 +67,7 @@ class _LoginState extends State<Login> {
                             SizedBox(
                               width: 300,
                               child: TextFormField(
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   hintText: 'Password',
                                   hintStyle: TextStyle(
                                     fontFamily: 'Rosarivo'
@@ -75,7 +75,7 @@ class _LoginState extends State<Login> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 300,
                               child: TextField(
                                 decoration: InputDecoration(
@@ -90,7 +90,7 @@ class _LoginState extends State<Login> {
                               padding: const EdgeInsets.only(top: 15),
                               child: InkWell(
                                 onTap: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => Profile(),));
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Profile(),));
                                 },
                                 child: Container(
                                   height: 60,
@@ -99,7 +99,7 @@ class _LoginState extends State<Login> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(50)
                                   ),
-                                  child: Center(child: Text('Login',
+                                  child: const Center(child: Text('Login',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 36,
@@ -112,8 +112,8 @@ class _LoginState extends State<Login> {
                             Padding(
                               padding: const EdgeInsets.only(top: 20),
                               child: TextButton(onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => Section(),));
-                              }, child: Text('Sign up',style: TextStyle(
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const Section(),));
+                              }, child: const Text('Sign up',style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w400,
                                 fontFamily: 'Rosarivo',
@@ -130,8 +130,8 @@ class _LoginState extends State<Login> {
               Align(
                 alignment: Alignment.topRight,
                 child: IconButton(onPressed: () {
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => AdminLogin(),)) ;
-                }, icon: Icon(Icons.more_vert_sharp)))
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => const AdminLogin(),)) ;
+                }, icon: const Icon(Icons.more_vert_sharp)))
             ],
           ),
         ),

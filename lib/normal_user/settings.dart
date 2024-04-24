@@ -29,15 +29,15 @@ class _NormalSettingsState extends State<NormalSettings> {
                 Container(
                       height: 330,
                       width: 393,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color.fromRGBO(110, 176, 201, 1),
                         image: DecorationImage(image: AssetImage('images/backimg.png'),
                         fit: BoxFit.cover,
             
                         )
                       ),
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.only(bottom: 180),
+                      child: const Center(child: Padding(
+                        padding: EdgeInsets.only(bottom: 180),
                         child: Text('Settings',style: TextStyle(
                           fontFamily: 'ubuntu',
                           fontSize: 26
@@ -46,13 +46,13 @@ class _NormalSettingsState extends State<NormalSettings> {
                     ),
                     IconButton(onPressed: () {
                       Navigator.pop(context);
-                    }, icon: Icon(Icons.arrow_back_ios,size: 30,)),
+                    }, icon: const Icon(Icons.arrow_back_ios,size: 30,)),
                     Padding(
                       padding: const EdgeInsets.only(top: 230),
                       child: Container(
                         height: 510,
                         width: 395,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(50)
@@ -74,26 +74,26 @@ class _NormalSettingsState extends State<NormalSettings> {
                             return ListTile(
                               
                               leading: Icon(Settingss[index]['icon']),
-                              title: Text(Settingss[index]['text1'],style: TextStyle(
+                              title: Text(Settingss[index]['text1'],style: const TextStyle(
                                 fontFamily: 'ubuntu',
                                 fontSize: 18
                               ),),
                               subtitle: Text(Settingss[index]['text2']),
-                              trailing: Icon(Icons.arrow_forward_ios_outlined),
+                              trailing: const Icon(Icons.arrow_forward_ios_outlined),
                               onTap: () {
                                 if (index == 0){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => NormalPassword(),));
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const NormalPassword(),));
                                 }if (index == 1){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => NormalHelp(),));
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const NormalHelp(),));
                                 }if (index == 2){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => NormalAbout(),));
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const NormalAbout(),));
                                 }else if (index == 3){
                                   // Navigator.push(context, MaterialPageRoute(builder: (context) => AboutUs(),));
                                 }
                               },
                             );
                           }, separatorBuilder: (context, index) {
-                            return Divider(thickness: 1,);
+                            return const Divider(thickness: 1,);
                           }, itemCount: Settingss.length),
                         ),
                       ),
@@ -112,7 +112,7 @@ class _NormalSettingsState extends State<NormalSettings> {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.green
                             ),
-                            child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                            child: const Row(mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text('Logout',style: TextStyle(
                                   fontFamily: 'ubuntu',
@@ -120,7 +120,7 @@ class _NormalSettingsState extends State<NormalSettings> {
                                   fontSize: 32
                                 ),),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 10),
+                                  padding: EdgeInsets.only(left: 10),
                                   child: Icon(Icons.logout,size: 32,color: Colors.white,),
                                 )
                               ],

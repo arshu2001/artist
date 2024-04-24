@@ -19,7 +19,7 @@ class _UserBookingState extends State<UserBooking> {
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text('Schedules',style: TextStyle(
             fontFamily: 'ubuntu',
             color: Color.fromRGBO(194, 74, 107, 1)
@@ -31,20 +31,20 @@ class _UserBookingState extends State<UserBooking> {
           ListView.separated(itemBuilder: (context, index) {
             return ListTile(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => BookingDetail(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const BookingDetail(),));
               },
               leading: Container(
                       height: 74,
                       width: 350,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color.fromRGBO(233, 234, 244, 1)
+                        color: const Color.fromRGBO(233, 234, 244, 1)
                       ),
                       child: Padding(
                         padding: const EdgeInsets.only(top: 10),
                         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            CircleAvatar(radius: 15,),
+                            const CircleAvatar(radius: 15,),
                             Column(
                               children: [
                                 Text(sche[index]['text1']),
@@ -65,7 +65,7 @@ class _UserBookingState extends State<UserBooking> {
 
             );
           }, separatorBuilder: (context, index) {return
-            Divider(thickness: 0,color: Colors.white,);
+            const Divider(thickness: 0,color: Colors.white,);
           }, itemCount: 3)
         ],
       ),

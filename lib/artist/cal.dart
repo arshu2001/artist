@@ -53,7 +53,7 @@ class CustomCalenderBuilder extends CalendarBuilder {
 }
 
 class CustomDemoScreen extends StatelessWidget {
-  const CustomDemoScreen({Key? key}) : super(key: key);
+  const CustomDemoScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

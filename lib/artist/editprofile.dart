@@ -78,9 +78,9 @@ class _EditProfileState extends State<EditProfile> {
                         borderRadius: BorderRadius.circular(10)
                       ),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Text('payment',
                             style: TextStyle(
                               color: Color.fromRGBO(134, 135, 142, 1),
@@ -89,7 +89,7 @@ class _EditProfileState extends State<EditProfile> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(right: 20),
+                            padding: EdgeInsets.only(right: 20),
                             child: Text('Kochi',
                             style: TextStyle(
                               fontFamily: 'ubuntu',
@@ -113,9 +113,9 @@ class _EditProfileState extends State<EditProfile> {
                         borderRadius: BorderRadius.circular(10)
                       ),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Text('Bio',
                             style: TextStyle(
                               color: Color.fromRGBO(134, 135, 142, 1),
@@ -139,9 +139,9 @@ class _EditProfileState extends State<EditProfile> {
                         borderRadius: BorderRadius.circular(10)
                       ),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Text('Name',
                             style: TextStyle(
                               color: Color.fromRGBO(134, 135, 142, 1),
@@ -165,9 +165,9 @@ class _EditProfileState extends State<EditProfile> {
                         borderRadius: BorderRadius.circular(10)
                       ),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Text('Date Of Birth',
                             style: TextStyle(
                               color: Color.fromRGBO(134, 135, 142, 1),
@@ -176,7 +176,7 @@ class _EditProfileState extends State<EditProfile> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(right: 20),
+                            padding: EdgeInsets.only(right: 20),
                             child: Text('01-01-2001',
                             style: TextStyle(
                               fontFamily: 'ubuntu',
@@ -200,9 +200,9 @@ class _EditProfileState extends State<EditProfile> {
                         borderRadius: BorderRadius.circular(10)
                       ),
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Text('Youtube account Link',
                             style: TextStyle(
                               color: Color.fromRGBO(134, 135, 142, 1),

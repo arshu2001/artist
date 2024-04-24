@@ -5,7 +5,6 @@ import 'package:artist/artist/editprofile.dart';
 import 'package:artist/artist/help.dart';
 import 'package:artist/artist/password.dart';
 import 'package:artist/login.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatefulWidget {
